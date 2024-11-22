@@ -1,1 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .top-links-container {
+            border-color: #807f7f;
+            border-width: 1px;
+            border-style: solid;
+            border-left: #333;
+            border-right: #333;
+
+            padding-left: 15%;
+            padding-right: 15%;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+
+            margin-bottom: 1rem;
+
+            display: flex;
+        }
+        .top-links-text {
+            font-weight: bold;
+            margin-right: 1rem;
+            display: flex;
+            cursor: pointer;
+        }
+
+        .main-section {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .path-link-text {
+            color: #002e6d;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .path-gt-symbol {
+            margin-left: 0.6rem;
+            margin-right: 0.6rem;
+        }
+
+        .paycheck-title {
+            text-align: center;
+            color: #002e6d;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        .get-info-about-sba {
+            text-align: center;
+            color: #002e6d;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            max-width: 75rem;
+
+            margin-left: 5rem;
+        }
+        .end-notice-text {
+            font-size: 2.1rem;
+            color: #002e6d;
+            margin-bottom: 2rem;
+        }
+
+        .main-boxes-div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .main-box {
+            border: #c5c5c5;
+            border-width: 2px;
+            border-radius: 0.5rem;
+            border-style: solid;
+
+            padding: 1.5rem;
+            position: relative;
+            min-height: 15rem;
+        }
+        .main-box-title {
+            color: #002e6d;
+            font-size: larger;
+        }
+        .main-box-info {
+            max-width: 23rem;
+        }
+        .main-box-link {
+            background-color: #007dbc;
+            color: white;
+            border-radius: 0.5rem;
+
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            text-align: center;
+            position: absolute;
+            width: 90%;
+            bottom: 1rem;
+
+            cursor: pointer;
+        }
+
+        .about-section {
+            background-color: #f5f5f5;
+
+            display: flex;
+            justify-content: space-between;
+
+            padding-left: 15%;
+            padding-right: 15%;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        .about-section-header-text {
+            font-weight: bold;
+        }
+        .about-seciton-link {
+            cursor: pointer;
+            text-decoration: underline;
+            color: #005999;
+
+            margin-top: 0.7rem;
+        }
+
+        .footer {
+            background-color: #c5c5c5;
+
+            display: flex;
+            justify-content: space-between;
+
+            padding-left: 15%;
+            padding-right: 15%;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        .footer-left-div {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="./images/sba-logo.png" width="200" height="60" style="margin-top: 1rem;">
+        <div>
+            <button style="float: right; background-color: #007dbc; color: white; padding-left: 1.2rem; padding-right: 1.2rem; padding-top: 0.7rem; padding-bottom: 0.7rem; border-width: 0;
+                            border-radius: 5px; font-size: 1rem;">
+                Español
+            </button>
+            <br>
+            <div style="float: right; display: flex; margin-top: 0.8rem; margin-bottom: 0.8rem;">
+                <div style="text-decoration: underline; color: #002e6d;">
+                    For Partners
+                </div>
+                <div style="margin-left: 0.5rem; margin-right: 0.5rem;">
+                    |
+                </div>
+                <div style="text-decoration: underline; color: #002e6d;">
+                    Newsroom
+                </div>
+                <div style="margin-left: 0.5rem; margin-right: 0.5rem;">
+                    |
+                </div>
+                <div style="text-decoration: underline; color: #002e6d;">
+                    Contact us
+                </div>
+                <div style="margin-left: 0.5rem; margin-right: 0.5rem;">
+                    |
+                </div>
+                <div style="text-decoration: underline; color: #002e6d;">
+                    Other languages
+                </div>
+            </div>
+            <br>
+            <div style="float: right; display: flex;">
+                <input>
+                <div style="background-color: #007dbc;">
+                    <img src="./images/search.png" style="margin-top: 0.5rem; margin-left: 0.5rem; margin-right: 0.5rem;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-links-container">
+        <div class="top-links-text" onclick="alert('Clicked Business Guide!')">
+            Business Guide
+            <div style="margin-left: 0.5rem;">
+                ⌄
+            </div>
+        </div>
+
+        <div class="top-links-text" onclick="alert('Clicked Funding Programs!')">
+            Funding Programs
+            <div style="margin-left: 0.5rem;">
+                ⌄
+            </div>
+        </div>
+
+        <div class="top-links-text" onclick="alert('Clicked Federal Contracting!')">
+            Federal Contracting
+            <div style="margin-left: 0.5rem;">
+                ⌄
+            </div>
+        </div>
+
+        <div class="top-links-text" onclick="alert('Clicked Learning Platform!')">
+            Learning Platform
+            <div style="margin-left: 0.5rem;">
+                ⌄
+            </div>
+        </div>
+
+        <div class="top-links-text" onclick="alert('Clicked Local Assistance!')">
+            Local Assistance
+            <div style="margin-left: 0.5rem;">
+                ⌄
+            </div>
+        </div>
+
+        <div class="top-links-text" onclick="alert('Clicked About SBA!')">
+            About SBA
+            <div style="margin-left: 0.5rem;">
+                ⌄
+            </div>
+        </div>
+    </div>
+
+    <div class="main-section">
+        <div style="margin-bottom: 5rem; display: flex;">
+            <div class="path-link-text"  onclick="alert('Clicked Home!')">
+                Home
+            </div>
+            <div class="path-gt-symbol">
+                &gt
+            </div>
+            <div class="path-link-text" onclick="alert('Clicked Funding Programs!')">
+                Funding Programs
+            </div>
+            <div class="path-gt-symbol">
+                &gt
+            </div>
+            <div class="path-link-text" onclick="alert('Clicked Loans!')">
+                Loans
+            </div>
+            <div class="path-gt-symbol">
+                &gt
+            </div>
+            <div class="path-link-text" onclick="alert('Clicked COVID-19 relief options!')">
+                COVID-19 relief options
+            </div>
+            <div class="path-gt-symbol">
+                &gt
+            </div>
+            Paycheck Protection Program
+        </div>
+
+        <div class="paycheck-title">
+            Paycheck Protection Program
+        </div>
+        <div class="get-info-about-sba">
+            Get information about the SBA loan program that helped businesses keep their workforce employed during the COVID-19 crisis.
+        </div>
+        <div class="end-notice-text">
+            Notice: The Paycheck Protection Program (PPP) ended on May 31, 2021. Existing borrowers may be eligible for PPP loan forgiveness.
+        </div>
+
+        <div class="main-boxes-div">
+            <div class="main-box">
+                <div class="main-box-title">
+                    PPP loan forgiveness
+                </div>
+                <div class="main-box-info">
+                    Borrowers may be eligible for Paycheck Protection Program (PPP) loan forgiveness.
+                </div>
+    
+                <div class="main-box-link" onclick="alert('Clicked Learn more about PPP loan forgiveness!')">
+                    Learn more about PPP loan forgiveness
+                </div>
+            </div>
+            <div class="main-box">
+                <div class="main-box-title">
+                    PPP lender information
+                </div>
+                <div class="main-box-info">
+                    Information and resources for lenders participating in the Paycheck Protection Program (PPP).
+                </div>
+    
+                <div class="main-box-link" onclick="alert('Clicked Get information for PPP lenders!')">
+                    Get information for PPP lenders
+                </div>
+            </div>
+            <div class="main-box">
+                <div class="main-box-title">
+                    PPP data
+                </div>
+                <div class="main-box-info">
+                    SBA maintains access to data for all its current and past COVID-19 relief programs, including the Paycheck Protection Program (PPP).
+                </div>
+    
+                <div class="main-box-link" onclick="alert('Clicked Download PPP reports!')">
+                    Download PPP reports
+                </div>
+            </div>
+            <div class="main-box">
+                <div class="main-box-title">
+                    First Draw PPP loan
+                </div>
+                <div class="main-box-info">
+                    If you did not receive a Paycheck Protection Program (PPP) loan before, First Draw PPP loans may have been available to you.
+                </div>
+    
+                <div class="main-box-link" onclick="alert('Clicked Read about First Draw PPP loans!')">
+                    Read about First Draw PPP loans
+                </div>
+            </div>
+            <div class="main-box">
+                <div class="main-box-title">
+                    Second Draw PPP loan
+                </div>
+                <div class="main-box-info">
+                    If you previously received a Paycheck Protection Program (PPP) loan, certain businesses were eligible for a Second Draw PPP loan.
+                </div>
+    
+                <div class="main-box-link" onclick="alert('Clicked Read about Second Draw PPP loans!')">
+                    Read about Second Draw PPP loans
+                </div>
+            </div>
+            <div class="main-box">
+                <div class="main-box-title">
+                    Get help with your PPP loan
+                </div>
+                <div class="main-box-info">
+                    SBA offers free counseling and training events to help you with the Paycheck Protection Program (PPP).
+                </div>
+    
+                <div class="main-box-link" onclick="alert('Clicked Get help with a PPP loan!')">
+                    Get help with a PPP loan
+                </div>
+            </div>
+        </div>
+
+        <span style="display: block; height: 2.5px; width: 3.5%; background-color: #a3a3a3; border-radius: 2px; margin-bottom: 1rem;"></span>
+        <div style="margin-bottom: 2rem;">
+            Short URL: sba.gov/ppp
+        </div>
+        <div style="margin-bottom: 1rem; cursor: pointer; text-decoration: underline; color: #005999;">
+            Return to top
+        </div>
+    </div>
+
+    <div class="about-section">
+        <div>
+            <div class="about-section-header-text">
+                About SBA
+            </div>
+            <div class="about-seciton-link">
+                Contact SBA
+            </div>
+            <div class="about-seciton-link">
+                Locations
+            </div>
+            <div class="about-seciton-link">
+                Upcoming events
+            </div>
+            <div class="about-seciton-link">
+                Newsroom
+            </div>
+            <div class="about-seciton-link">
+                SBA blog
+            </div>
+            <div class="about-seciton-link">
+                Leadership team
+            </div>
+        </div>
+
+        <div>
+            <div class="about-section-header-text">
+                About the site
+            </div>
+            <div class="about-seciton-link">
+                Site map
+            </div>
+            <div class="about-seciton-link">
+                Privacy Policy
+            </div>
+            <div class="about-seciton-link">
+                Linking policy
+            </div>
+            <div class="about-seciton-link">
+                Plain language
+            </div>
+            <div class="about-seciton-link">
+                Accessibility
+            </div>
+            <div class="about-seciton-link">
+                Disclaimers
+            </div>
+        </div>
+
+        <div>
+            <div class="about-section-header-text">
+                Open government
+            </div>
+            <div class="about-seciton-link">
+                Freedom of Information Act
+            </div>
+            <div class="about-seciton-link">
+                No Fear Act
+            </div>
+            <div class="about-seciton-link">
+                Open data sources
+            </div>
+            <div class="about-seciton-link">
+                Policies and guidance
+            </div>
+            <div class="about-seciton-link">
+                Budget and performance
+            </div>
+            <div class="about-seciton-link"  style="display: flex;">
+                Regulations.gov <img src="./images/link-icon.png" width="18" height="18" style="margin-top: 0.2rem; margin-left: 0.2rem;">
+            </div>
+        </div>
+
+        <div>
+            <div class="about-section-header-text">
+                Oversight
+            </div>
+            <div class="about-seciton-link">
+                Inspector General
+            </div>
+            <div class="about-seciton-link">
+                Advocacy
+            </div>
+            <div class="about-seciton-link">
+                Hearings and appeals
+            </div>
+            <div class="about-seciton-link">
+                Ombudsman
+            </div>
+            <div class="about-seciton-link">
+                Fraud and identity theft
+            </div>
+            <div class="about-seciton-link" style="display: flex;">
+                WhiteHouse.gov <img src="./images/link-icon.png" width="18" height="18" style="margin-top: 0.2rem; margin-left: 0.2rem;">
+            </div>
+            <div class="about-seciton-link" style="display: flex;">
+                USA.gov <img src="./images/link-icon.png" width="18" height="18" style="margin-top: 0.2rem; margin-left: 0.2rem;">
+            </div>
+        </div>
+
+        <div style="max-width: 24rem;">
+            <div style="font-weight: bold; margin-bottom: 0.7rem;">
+                Sign up
+            </div>
+            <div style="margin-bottom: 0.7rem;">
+                Receive information about upcoming SBA events, news alerts, and program updates.
+            </div>
+            <div style="display: flex; margin-bottom: 0.7rem;">
+                <div style="color: red;">*</div> <div style="font-style: italic; margin-left: 0.2rem;">indicates a required field</div>
+            </div>
+            <div style="display: flex;">
+                Email <div style="color: red; margin-left: 0.2rem;">*</div>
+            </div>
+            <input style="margin-bottom: 0.7rem;">
+            <div style="display: flex;">
+                ZIP Code <div style="color: red; margin-left: 0.2rem;">*</div>
+            </div>
+            <div style="display: flex; margin-bottom: 0.7rem;">
+                <input style="width: 5rem;">
+                <button style="width: 10rem; margin-left: 1rem;">Subscribe to SBA emails</button>
+            </div>
+            <div style="">
+                Your information will only be used in accordance
+                <div style="display: flex;">
+                    with our <div style="color: #002e6d; margin-left: 0.3rem; text-decoration: underline;">website privacy policy</div>.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-left-div">
+            <img src="./images/sba-logo-plain.png" width="80" height="65" style="margin-right: 1rem; margin-top: 1rem;">
+            <div>
+                <div style="font-weight: bold;">
+                    U.S. Small Business Administration
+                </div>
+                <div>
+                    409 3rd St., SW
+                </div>
+                <div>
+                    Washington, DC 20416
+                </div>
+                <div style="display: flex;">
+                    <div style="text-decoration: underline;">
+                        800-827-5722
+                    </div>
+                    <img src="./images/phone-square.png" width="13" height="13" style="margin-left: 0.2rem; margin-top: 0.35rem;;">
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 1.8rem;">
+            <img src="./images/facebook.png" width="40" style="margin-right: 0.6rem; cursor: pointer;">
+            <img src="./images/xlogo.png" width="40" style="margin-right: 0.6rem; cursor: pointer;">
+            <img src="./images/youtube.png" width="40" style="margin-right: 0.6rem; cursor: pointer;">
+            <img src="./images/linkedin.png" width="40" style="margin-right: 0.6rem; cursor: pointer;">
+            <img src="./images/instagram.png" width="40" style="margin-right: 0.6rem; cursor: pointer;">
+        </div>
+    </div>
+</body>
+</html>
 
